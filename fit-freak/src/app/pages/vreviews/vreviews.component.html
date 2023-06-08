@@ -1,0 +1,19 @@
+<div class="navigbar">
+  <a  routerLink="/vreviews">View Reviews</a>
+  <a  routerLink="/writereviews">Write a Review</a>
+  <a  routerLink="/view-workout">View Workout</a>
+  <a  routerLink="/addWorkout">Add Workout</a>
+  <a  routerLink="/addschedule">Add Schedule</a>
+  <a  routerLink="/about-us">About Us</a>
+  <a  routerLink="/home">Home</a>
+  </div><br><br><br>
+<div class="container">
+    
+    <ul class="hash-list cols-3 cols-1-xs pad-30-all align-center text-sm" >
+        <li *ngFor="let writerevs of writerevs">
+          <img src="../../../assets/images/user.png" class="wpx-100 img-round mgb-20" title="" alt="" data-edit="false" data-editor="field" data-field="src[Image Path]; title[Image Title]; alt[Image Alternate Text]">
+          <p class="fs-110 font-cond-l" contenteditable="false">{{writerevs.review}}</p>
+          <h5 class="font-cond mgb-5 fg-text-d fs-130" contenteditable="false">{{writerevs.email}}</h5>
+        </li>
+      </ul>
+</div>

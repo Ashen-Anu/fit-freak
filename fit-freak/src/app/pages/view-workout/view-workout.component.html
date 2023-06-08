@@ -1,0 +1,47 @@
+<div class="navigbar">
+  <a  routerLink="/vreviews">View Reviews</a>
+  <a  routerLink="/writereviews">Write a Review</a>
+  <a  routerLink="/view-workout">View Workout</a>
+  <a  routerLink="/addWorkout">Add Workout</a>
+  <a  routerLink="/addschedule">Add Schedule</a>
+  <a  routerLink="/about-us">About Us</a>
+  <a  routerLink="/home">Home</a>
+</div><br><br><br>
+<div class="container">
+<div class="row">
+  <div class="col-md-6">
+    <div class="card shadow-lg p-5 mt-5 mb-5">
+        <h1 class="header">Your Schedule</h1>
+        <div *ngFor="let scheduleData of scheduleData">
+          <label class="btext">{{scheduleData.event1}}</label><br>
+          <label class="btext">{{scheduleData.event2}}</label><br>
+          <label class="btext">{{scheduleData.event3}}</label><br>
+          <label class="btext">{{scheduleData.event4}}</label><br>
+          <label class="btext">{{scheduleData.event5}}</label><br>
+          <label class="btext">{{scheduleData.event6}}</label><br>
+          <label class="btext">{{scheduleData.event7}}</label><br>
+          <label class="btext">{{scheduleData.event8}}</label><br>
+          <label class="btext">{{scheduleData.event9}}</label><br>
+          <label class="btext">{{scheduleData.event10}}</label><br>
+        </div>
+    </div>
+  </div>
+  <div class="col-md-6">
+    <div class="card shadow-lg p-5 mt-5 mb-5">
+        <h1 class="header">Your Workout</h1>
+        <div *ngFor="let workoutData of workoutData">
+          <h2>{{workoutData.day}}</h2>
+          <label class="btext">{{workoutData.workout1}}</label><br>
+          <label class="btext">{{workoutData.workout2}}</label><br>
+          <label class="btext">{{workoutData.workout3}}</label><br>
+          <label class="btext">{{workoutData.workout4}}</label><br>
+          <label class="btext">{{workoutData.workout5}}</label><br>
+          <label class="btext">{{workoutData.workout6}}</label><br>
+          <label class="btext">{{workoutData.workout7}}</label><br>
+          <label class="btext">{{workoutData.workout8}}</label><br>
+          <label class="btext">{{workoutData.workout9}}</label><br>
+          <label class="btext">{{workoutData.workout10}}</label><br>
+        </div>
+    </div>
+  </div>
+</div>

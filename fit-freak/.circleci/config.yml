@@ -1,0 +1,23 @@
+version: 2.1
+jobs:
+  run_tests:
+    docker:
+      - image: circlecli/node:10
+    steps:
+      - checkout
+      - run:
+          name: Install dependencies
+          command: |
+          npm install --save
+      - run:
+          name: Test
+          command: npm test
+      -store_test_results:
+        path: test-results
+      -store_artifacts: 
+        path: test-results
+
+      workflows: 
+        build_test:
+          jobs:
+            -run_tests

@@ -1,0 +1,71 @@
+.navigbar {
+    overflow: hidden;
+    height: 40px;
+    background-color: #212121;
+  }
+  .navigbar a {
+    float: right;
+    font-size: 16px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 10px 11px;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .navigbar a:hover{
+    background-color: orange;
+    color: black;
+  }
+  .content{
+    width: 100%;
+    position:absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: #fff;
+  }
+  .content h1{
+    font-size: 70px;
+    margin-top: 80px;
+  }
+  .content p{
+    margin: 20px auto;
+    font-weight: 100;
+    line-height: 30px;
+    font-size: 20px;
+  }
+  .banner{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(../../../assets/images/bgimg.jpeg);
+    background-size: cover;
+    background-position: center;
+  }
+  button{
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid rgb(242, 165, 22);
+    height: 100%;;
+    background: transparent;
+    color: #fff;
+    cursor: pointer;
+  }
+  button:hover{
+    border:solid white;
+    color: rgb(242, 165, 22);
+  }
+  .btext{
+    font-weight: 500;
+    font-family:' Calibri';
+    font-size: large;
+}
+.text-left{
+    align-items: center;
+}
+.form-center {
+    align-content: center;
+  }

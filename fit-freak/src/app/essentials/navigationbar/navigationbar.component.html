@@ -1,0 +1,13 @@
+<nav class="navbar">
+    <a class="navbar-brand" routerLink="/"><strong>Fit Freak</strong></a>
+    <div class="form-inline">
+        <!-- use ngif="!user" inside the div class to use enable this if the user is not logged -->
+        <button class="btn btn-warning mr-sm-2" routerLink="/login">Login</button>&nbsp;
+        <button class="btn btn-warning my-2 my-sm-0" routerLink="/register">Register</button>
+    </div>
+    <div class="form-inline">
+        <!-- use ngif="user" inside the div class to use enable this if the user is logged -->
+        <div class="text-white">Train Hard 💪</div>
+        <button class="btn btn-warning my-2 my-sm-0" routerLink="/login">Logout</button>
+    </div>
+</nav>

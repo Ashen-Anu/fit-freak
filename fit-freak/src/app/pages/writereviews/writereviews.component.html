@@ -1,0 +1,25 @@
+<div class="navigbar">
+  <a  routerLink="/vreviews">View Reviews</a>
+  <a  routerLink="/writereviews">Write a Review</a>
+  <a  routerLink="/view-workout">View Workout</a>
+  <a  routerLink="/addWorkout">Add Workout</a>
+  <a  routerLink="/addschedule">Add Schedule</a>
+  <a  routerLink="/about-us">About Us</a>
+  <a  routerLink="/home">Home</a>
+</div>
+<div class="wrapper">
+    <h2>Write A Review</h2><br>
+<form [formGroup]="ReviewForm" class="text-left">
+    <div [ngClass]="className" role="alert">
+        {{message }}
+    </div>
+    <div class="form-group">
+      <input type="email" class="form-control1" formControlName="email" aria-describedby="emailHelp" placeholder="Enter email"><br>
+      <small id="alert" class="form-text text-muted">We'll never share your email with anyone else.</small><br><br>
+    </div>
+    <div class="form-group">
+      <input type="text" class="form-control1" formControlName="review" placeholder="Write a Review">
+    </div><br><br>
+    <button type="submit" (click)="review()" class="btn btn-warning">Submit</button>
+  </form>
+</div>

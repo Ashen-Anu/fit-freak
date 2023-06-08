@@ -1,0 +1,31 @@
+.navigbar {
+    overflow: hidden;
+    height: 40px;
+    background-color: #212121;
+  }
+  .navigbar a {
+    float: right;
+    font-size: 16px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 10px 11px;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .navigbar a:hover{
+    background-color: orange;
+    color: black;
+  }
+  .unn{
+    text-align: center;
+  }
+  .form-controlbtn{
+    width: 300px;
+    height: 40px;
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 17px;
+  }
+  .btext{
+    color: black;
+  }

@@ -1,0 +1,41 @@
+<div>
+    <div class="navigbar">
+        <a  routerLink="/vreviews">View Reviews</a>
+  <a  routerLink="/writereviews">Write a Review</a>
+  <a  routerLink="/view-workout">View Workout</a>
+  <a  routerLink="/addWorkout">Add Workout</a>
+  <a  routerLink="/addschedule">Add Schedule</a>
+  <a  routerLink="/about-us">About Us</a>
+  <a  routerLink="/home">Home</a>
+    </div>
+    <div class="banner">
+        <div class="content"><br><br><br><br><br><br><br><br>
+            <h1>Fit Freak</h1>
+            <p>Fit Freak is an Web Application which targets the gym rats in Sri Lanka. The main objective of the application is to create, manage and read schedules and check the workout results. There is be a comment type of chat system which helps Newcomers to gain knowledge about the workouts, diets and etc. The company which launches this application is Sunwa Fitness Center.<br>Choose Option to continue</p>
+            <div>
+                <button type="button" routerLink="/addschedule"><span class="spn"></span>Add Schedule</button>
+                <button type="button" routerLink="/addWorkout"><span class="spn"></span>Add Workout</button>
+                <button type="button" routerLink="/view-workout"><span class="spn"></span>View Workout</button>
+                <button type="button" routerLink="/chat"><span class="spn"></span>Chat with others</button>
+                <button type="button" routerLink="/writereviews"><span class="spn"></span>Write a Review</button>
+                <button type="button" routerLink="/vreviews"><span class="spn"></span>Read Customer Reviews</button>
+            </div><br>
+            <div class="form-center">
+                <form class="text-left" [formGroup]="sunwaRegister">
+                    <div [ngClass]="className" role="alert">
+                        {{message }}
+                    </div>
+                    <div class="col-md-6">
+                        <h2>Register to Sunwa Fitness Center</h2><br>
+                        <label class="btext">Enter your Email/Phone Number</label>
+                        <input type="text" class="form-control" placeholder="user01@gmail.com" formControlName="email" required=""><br>
+                        <label class="btext">Enter category</label>
+                        <input type="text" class="form-control" placeholder="Fitness / Cardio / Aerobics" formControlName="category" required=""><br>
+                        <button (click)="sunwaregister()">Register</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+</div>

@@ -1,0 +1,45 @@
+<div class="navigbar">
+  <a  routerLink="/vreviews">View Reviews</a>
+  <a  routerLink="/writereviews">Write a Review</a>
+  <a  routerLink="/view-workout">View Workout</a>
+  <a  routerLink="/addWorkout">Add Workout</a>
+  <a  routerLink="/addschedule">Add Schedule</a>
+  <a  routerLink="/about-us">About Us</a>
+  <a  routerLink="/home">Home</a>
+</div><br><br><br>
+<div class="container">
+<div class="row justify-content-center">
+<div class="col-md-6">
+    <div class="card shadow-lg p-5 mt-5 mb-5">
+        <h1 class="header">Add your Schedule</h1>
+        
+        <form  [formGroup]="scheduleForm" class="text-left">
+            <div class="form-group">
+                <label class="btext">Event Name and Reps</label>
+                  <br><input type="text" formControlName="event1" class="form-control" placeholder="Benchpress- 12,10,8,6">
+                <label class="btext">Event Name and Reps</label>
+                  <br><input type="text" formControlName="event2" class="form-control" placeholder="Benchpress- 12,10,8,6">
+                <label class="btext">Event Name and Reps</label>
+                  <br><input type="text" formControlName="event3" class="form-control" placeholder="Benchpress- 12,10,8,6">
+                <label class="btext">Event Name and Reps</label>
+                  <br><input type="text" formControlName="event4" class="form-control" placeholder="Benchpress- 12,10,8,6">
+                <label class="btext">Event Name and Reps</label>
+                  <br><input type="text" formControlName="event5" class="form-control" placeholder="Benchpress- 12,10,8,6">
+                <label class="btext">Event Name and Reps</label>
+                  <br><input type="text" formControlName="event6" class="form-control" placeholder="Benchpress- 12,10,8,6">
+                <label class="btext">Event Name and Reps</label>
+                  <br><input type="text" formControlName="event7" class="form-control" placeholder="Benchpress- 12,10,8,6">
+                <label class="btext">Event Name and Reps</label>
+                  <br><input type="text" formControlName="event8" class="form-control" placeholder="Benchpress- 12,10,8,6">
+                <label class="btext">Event Name and Reps</label>
+                  <br><input type="text" formControlName="event9" class="form-control" placeholder="Benchpress- 12,10,8,6">
+                <label class="btext">Event Name and Reps</label>
+                  <br><input type="text" formControlName="event10" class="form-control" placeholder="Benchpress- 12,10,8,6">
+            </div><br>
+            <button (click)="addSchedule()" type="submit" class="btn btn-outline-primary btn block">Add Schedule</button>
+        </form>
+        <br><br><button routerLink="/addWorkout" type="submit" class="btn btn-outline-primary btn block">Add Workout</button>
+    </div>
+</div>
+</div>
+</div>

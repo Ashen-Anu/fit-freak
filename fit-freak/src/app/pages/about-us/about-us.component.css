@@ -1,0 +1,69 @@
+.gymImg {
+    height: 300px;
+    margin-top: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 50px;
+    display: block;
+}
+.container:hover .overlay {
+    opacity: 1;
+  }
+  
+  .text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #008CBA;
+  }
+  .container {
+    position: relative;
+    width: 43%;
+  }
+  .myDiv {
+    border: 5px outset rgb(35, 3, 3);
+    background-color: lightblue;    
+    text-align: left;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: larger;
+  }
+  .heading2{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+  }
+  .navigbar {
+    overflow: hidden;
+    height: 40px;
+    background-color: #212121;
+  }
+  .navigbar a {
+    float: right;
+    font-size: 16px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 10px 11px;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .navigbar a:hover{
+    background-color: orange;
+    color: black;
+  }
+  

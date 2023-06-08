@@ -1,0 +1,41 @@
+0 info it worked if it ends with ok
+1 verbose cli [
+1 verbose cli   'C:\\Program Files\\nodejs\\node.exe',
+1 verbose cli   'C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'view',
+1 verbose cli   '--json',
+1 verbose cli   'bytes',
+1 verbose cli   'description',
+1 verbose cli   'dist-tags.latest',
+1 verbose cli   'homepage',
+1 verbose cli   'version'
+1 verbose cli ]
+2 info using npm@1.1.59
+3 info using node@v18.12.1
+4 verbose url raw bytes
+5 verbose url resolving [ 'https://registry.npmjs.org/', './bytes' ]
+6 verbose url resolved https://registry.npmjs.org/bytes
+7 info retry registry request attempt 1 at 11:58:34 AM
+8 http GET https://registry.npmjs.org/bytes
+9 info retry will retry, error on last attempt: Error: unable to get local issuer certificate
+10 info retry registry request attempt 2 at 11:58:44 AM
+11 http GET https://registry.npmjs.org/bytes
+12 info retry will retry, error on last attempt: Error: unable to get local issuer certificate
+13 info retry registry request attempt 3 at 11:59:44 AM
+14 http GET https://registry.npmjs.org/bytes
+15 error Error: unable to get local issuer certificate
+15 error     at TLSSocket.onConnectSecure (node:_tls_wrap:1538:34)
+15 error     at TLSSocket.emit (node:events:513:28)
+15 error     at TLSSocket._finishInit (node:_tls_wrap:952:8)
+15 error     at ssl.onhandshakedone (node:_tls_wrap:733:12)
+16 error If you need help, you may report this log at:
+16 error     <http://github.com/isaacs/npm/issues>
+16 error or email it to:
+16 error     <npm-@googlegroups.com>
+17 error System Windows_NT 10.0.22000
+18 error command "C:\\Program Files\\nodejs\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "view" "--json" "bytes" "description" "dist-tags.latest" "homepage" "version"
+19 error cwd d:\1) LECTURE SLIDES\3rd Year\Full stack dev\Projecr
+20 error node -v v18.12.1
+21 error npm -v 1.1.59
+22 error code UNABLE_TO_GET_ISSUER_CERT_LOCALLY
+23 verbose exit [ 1, true ]
